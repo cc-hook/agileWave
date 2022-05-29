@@ -17,18 +17,17 @@ agileWave旨在提供一种更加便捷的信号时序描述格式，在wavedrom
 
 ### 示例
 
-tick_based_format_note = '''推荐使用 Clock-Based-Description：
-HEAD:tick_base_wave test
-FOOT:tick_cnt 12
-00-> clk=P,A=0,NULL=0,B=1,C=1
-01-> A=1-a
-02->...
-03->D=data0
-04->...
-05->B=0-b
-06->C=1-c
-07->C=0-d,D=data1
-08->...
-EDGE: a-b note,c-d
+HEAD:tick_base_wave test<br>
+FOOT:tick_cnt 12<br>
+00-> clk=P,A=0,NULL=0,B=1,C=1<br>
+01-> A=1-a<br>
+02->...<br>
+03->D=data0<br>
+04->...<br>
+05->B=0-b<br>
+06->C=1-c<br>
+07->C=0-d,D=data1<br>
+08->...<br>
+EDGE: a-b note,c-d<br>
 
 ![示例](https://gitee.com/cc-hook/picture/raw/master/wechat/eg.jpg)
