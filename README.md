@@ -1,9 +1,11 @@
 # agileWave
 
 An agile description for drawing digital waveform or timing diagram, based wavedrom and qt
-agileWave旨在提供一种更加便捷的信号时序描述格式，在wavedrom和Qt基础上二次开发，由于部分描述格式和wavedrom语法一致，因此建议读者先初步了解下wavedrom：<https://wavedrom.com/>
+agileWave旨在提供一种更加便捷的信号时序描述格式，使用PyQT开发。
+1. 支持基于wavedrom的简易表达格式，和wavedrom语法基本一致，读者先初步了解下wavedrom：<https://wavedrom.com/>
+2. 支持基于Plantuml的逻辑时序绘制，语法参见：<https://plantuml.com/zh/timing-diagram>
 
-## 信号描述格式说明
+## 基于Wavedrom的信号描述格式说明
 
 1. 每行代表1个clock tick
    格式= "[clock周期]->[信号1=信号值],[信号2=信号值-标签];"
@@ -31,3 +33,4 @@ FOOT:tick_cnt 12<br>
 EDGE: a-b note,c-d<br>
 
 ![示例](https://gitee.com/cc-hook/picture/raw/master/wechat/eg.jpg)
+
